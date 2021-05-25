@@ -1,11 +1,14 @@
 // import './App.css';
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import LandingPage from './components/LandingPage';
 
 const App = props => (
-  <Switch>
-    <Route exact path='/' component={ LandingPage } />
-  </Switch>
+  <Router>
+    <Switch>
+      <Route exact path='/' component={ LandingPage } />
+    </Switch>
+  </Router>
 )
 
 export default App;
